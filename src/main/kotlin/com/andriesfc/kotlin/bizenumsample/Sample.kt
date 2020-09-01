@@ -1,10 +1,4 @@
-# Handling business mapped values as Enums
-
-Sample how to use declare custom  `static` lookups on enums in Kotlin. 
-
-This enable code patterns such as: 
-
-```kotlin
+package com.andriesfc.kotlin.bizenumsample
 
 fun main() {
     println(LinkMode.fromCode("bi"))
@@ -22,6 +16,4 @@ enum class LinkMode(private val code: String, private val position: Int) {
         val fromCode = enumFromMapped(LinkMode::code)
     }
 }
-```
 
- 
