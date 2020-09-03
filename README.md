@@ -1,6 +1,6 @@
 # Handling business mapped values as Enums
 
-Sample how to use declare custom  `static` lookups on enums in Kotlin. 
+Sample how to use and declare custom lookups on enums based business codes. 
 
 This enables code patterns such as: 
 
