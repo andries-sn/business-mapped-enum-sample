@@ -2,7 +2,7 @@
 
 Sample how to use declare custom  `static` lookups on enums in Kotlin. 
 
-This enable code patterns such as: 
+This enables code patterns such as: 
 
 ```kotlin
 
