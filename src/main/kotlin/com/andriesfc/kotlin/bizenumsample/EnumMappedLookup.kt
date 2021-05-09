@@ -6,6 +6,6 @@ fun interface EnumMappedLookup<E, T> where E : Enum<E> {
 }
 
 inline fun <reified E, T> enumFromMapped(enumToMappedValue: (E) -> T): EnumMappedLookup<E, T> where E : Enum<E> {
-    val enums = E::class.java.enumConstants.map { enumToMappedValue(it) to it }.toMap()
+    val enums = E::class.java.enumConstants.associateBy { enumToMappedValue(it) }
     return EnumMappedLookup { requireNotNull(enums[it]) }
 }

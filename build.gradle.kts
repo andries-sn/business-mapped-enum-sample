@@ -1,13 +1,10 @@
-import org.jetbrains.kotlin.gradle.dsl.*
-
 
 plugins {
-    kotlin("jvm") version "1.4.0"
+    kotlin("jvm") version "1.5.0"
 }
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 
@@ -17,7 +14,6 @@ dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     testImplementation("org.jetbrains.kotlin:kotlin-test")
-    testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
     testImplementation("org.junit.jupiter:junit-jupiter-api:$junitVersion")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:$junitVersion")
 }
